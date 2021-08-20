@@ -86,6 +86,10 @@ body {
 	opacity: 1;
 }
 
+path.current-floor {
+	opacity: 1;
+}
+
 .main-floor {
 	display: flex;
 	flex-direction: column;
