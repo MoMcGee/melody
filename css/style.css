@@ -124,8 +124,7 @@ path.current-floor {
 	color: #635854;
 }
 
-.counter-text {
-	/*margin-top: 10px;*/
+.floor-counter {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 124px;
 	color: #635854;
@@ -138,4 +137,104 @@ path.current-floor {
 	border-radius: 6px;
 	color: #ffffff;
 	cursor: pointer;
+}
+
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 0.2s;
+}
+
+.is-open {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.modal-dialog {
+	position: relative;
+	max-width: 1000px;
+	min-height: 565px;
+	background-color: #fff;
+	flex-grow: 1;
+	display: flex;
+}
+
+.modal-image {
+	width: 60%;
+	padding: 50px;
+	text-align: center;
+	background-color: #EBEBEB;
+}
+
+
+.modal-title {
+	margin-top: 0;
+	margin-bottom: 25px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 24px;
+	line-height: 29px;
+	color: #000000;
+}
+
+.modal-info {
+	width: 40%;
+	padding: 50px 40px;
+}
+
+.flat-list {
+	margin: 0;
+	margin-top: 55px;
+	padding: 0;
+	list-style: none;
+}
+
+.flat-item {
+	margin-bottom: 10px;
+}
+
+.flat-link {
+	font-size: 16px;
+	line-height: 19px;
+	color: #635854;
+	text-decoration: none;
+}
+
+.flat-link:hover {
+	color: #3596F5;
+	text-decoration: underline;
+}
+
+.modal-alert {
+	margin-top: 56px;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 19px;
+	color: #635854;
+}
+
+.modal-close-button {
+	position: absolute;
+	right: 27px;
+	top: 38px;
+	cursor: pointer;
+	border: none;
+	background-color: #fff;
+}
+
+.flats path {
+	opacity: 0;
+	cursor: pointer;
+}
+
+.flats path:hover {
+	opacity: 1;
 }
